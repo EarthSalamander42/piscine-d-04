@@ -21,7 +21,7 @@ int		ft_iterative_factorial(int nb)
 	{
 		return (0);
 	}
-	else if (nb == 1)
+	else if (nb == 0 || nb == 1)
 	{
 		return (1);
 	}

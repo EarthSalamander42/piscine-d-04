@@ -22,7 +22,7 @@ int		ft_recursive_factorial(int nb)
 		printf("Result: %d", 0);
 		return (0);
 	}
-	else if (nb == 1)
+	else if (nb == 0 || nb == 1)
 	{
 		printf("Result: %d", 1);
 		return (1);
