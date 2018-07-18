@@ -21,13 +21,9 @@ int		ft_sqrt(int nb)
 	{
 		check = result * result;
 		if (check != nb)
-		{
 			result = result + 1;
-		}
 		else
-		{
 			return (result);
-		}
 	}
 	return (0);
 }

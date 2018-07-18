@@ -6,18 +6,16 @@
 /*   By: jmaguire <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/08 13:06:49 by jmaguire          #+#    #+#             */
-/*   Updated: 2018/07/08 13:07:00 by jmaguire         ###   ########.fr       */
+/*   Updated: 2018/07/18 10:39:36 by jmaguire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_iterative_factorial(int nb)
 {
-	int i;
-	int j;
+	int result;
 
-	i = 1;
-	j = nb;
-	if ((nb <= 0) || nb > 12)
+	result = 1;
+	if ((nb < 0) || nb > 12)
 	{
 		return (0);
 	}
@@ -27,11 +25,11 @@ int		ft_iterative_factorial(int nb)
 	}
 	else
 	{
-		while (i <= j)
+		while (nb >= 1)
 		{
-			nb = nb * i;
-			i++;
+			result = nb * result;
+			nb--;
 		}
 	}
-	return (nb);
+	return (result);
 }
