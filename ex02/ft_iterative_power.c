@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_iterative_power(int nb, int power)
+int		ft_iterative_power(int nb, int power)
 {
 	int i;
 	int result;
@@ -19,16 +19,12 @@ int ft_iterative_power(int nb, int power)
 	result = nb;
 	if (nb == 0)
 		return (1);
+	else if (power < 0)
+		return (0);
 	while (i < power)
 	{
 		result = result * nb;
 		i++;
 	}
-
-	if (result < 1)
-		return 0;
-	else if (result == 0)
-		return 1;
-	else
-		return result;
+	return (result);
 }
